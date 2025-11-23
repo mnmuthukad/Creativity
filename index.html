@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Presentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* --- 1. DESIGN VARIABLES & RESET --- */
         :root {
@@ -17,7 +18,7 @@
             --font-body: 'Inter', 'Segoe UI', sans-serif;
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
@@ -28,6 +29,11 @@
             height: 100vh;
             width: 100vw;
             color: var(--text);
+        }
+
+        .full-caps {
+            text-transform: uppercase;
+            font-weight: bold; /* Optional: makes it bold */
         }
 
         /* --- 2. STAGE & LAYOUT --- */
@@ -234,9 +240,12 @@
             <p style="margin-top:20px;">Creativity and Art for Engineering Sciences</p>
         </div>
         <div style="text-align: center;">
-            <p style="color:var(--accent); font-weight:500;"><br><br><br><br><br>
-                MUHAMMED NIYAS | MSc. Applied Physics
-            </p>
+            <p><br><br><br> MUHAMMED NIYAS | MSc. Applied Physics
+            </p><br>
+            <a href="" target="_blank">
+                <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
+            </a>
+            <p style="color: #0077b5; font-weight:500;">niyasmuthukad</p>
         </div>
     </div>
 
@@ -329,7 +338,16 @@
         <img src="Image/logo_1.jpg" style="width:100%; border-radius:12px; box-shadow:var(--shadow);">
     </div>
 
-    
+    <div class="slide" style="text-align:center;">
+        <h2>Storytelling - The Pen and the Pencil</h2>
+        <p>A Pen laughed at a Pencil. "I am better than you," the Pen said, "because my ink lasts forever. 
+            You are weak because you can be erased." Suddenly, the Pen made a spelling mistake. 
+            He could not fix it, and the paper looked messy and ugly. Then, the Pencil made a mistake. 
+            He simply used his eraser, fixed the error, and kept writing perfectly. 
+            The Pen realized that being able to fix your mistakes is actually a strength, not a weakness.
+        </p>
+        <p>Moral: <i class="full-caps">"It is better to correct your mistakes than to be stuck with them."</i></p>
+    </div>
 
     <div class="slide">
         <h2>Photography</h2>
@@ -343,178 +361,15 @@
         </div>
     </div>
 
-
-
-    <div class="slide">
-        <h2>Semantic Hierarchy</h2>
-        <p>By using standard H1-H6 tags, we ensure the document is readable by screen readers and search indexing bots instantly.</p>
-        <p>This structure forms the backbone of accessible web design.</p>
-    </div>
-
-    <div class="slide">
-        <div style="text-align:center; padding: 0 50px;">
-            <h2 style="font-size:4rem; border:none; margin-bottom:0; color:var(--accent);">“</h2>
-            <p style="font-family:var(--font-head); font-style:italic; font-size:2rem;">
-                Design is not just what it looks like and feels like. Design is how it works.
-            </p>
-            <p style="font-weight:bold; margin-top:20px;">— Steve Jobs</p>
-        </div>
-        <div class="page-num">6 / 20</div>
-    </div>
-
-    <div class="slide">
-        <h2>Research Methods</h2>
-        <p>We conducted A/B testing on 500 users comparing PDF downloads vs. Live Web Links.</p>
-        <p>Results showed a <strong>40% increase</strong> in engagement time with Web Links.</p>
-        <div class="page-num">7 / 20</div>
-    </div>
-
-    <div class="slide layout-split">
-        
-        <div>
-            <h2>Comparative Analysis</h2>
-            <p>Performance metrics across different rendering engines.</p>
-            
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Metric</th>
-                        <th>Native App</th>
-                        <th>Web Slides</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Load Time</td>
-                        <td>2.5s</td>
-                        <td><strong>0.4s</strong></td>
-                    </tr>
-                    <tr>
-                        <td>Memory (RAM)</td>
-                        <td>450 MB</td>
-                        <td>120 MB</td>
-                    </tr>
-                    <tr>
-                        <td>FPS</td>
-                        <td>30</td>
-                        <td>60</td>
-                    </tr>
-                    <tr>
-                        <td>Interactive</td>
-                        <td>No</td>
-                        <td>Yes (JS)</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="half-img-container">
-            <img src="https://placehold.co/600x600/1e293b/fff?text=Data+Visualization+Graph" class="half-img" alt="Graph">
-            <div class="img-caption">
-                <strong>Figure 1.2:</strong> Memory consumption analysis chart. <br>
-                Note the significant efficiency of the DOM-based approach compared to native rendering.
-            </div>
-        </div>
-
-        <div class="page-num">8 / 20</div>
-    </div>
-
-    <div class="slide">
-        <h2>Efficiency</h2>
-        <p>The previous slide demonstrates that web technologies are now mature enough to handle high-fidelity graphics with minimal overhead.</p>
-        <div class="page-num">9 / 20</div>
-    </div>
-
-    <div class="slide">
-        <h2>Under the Hood</h2>
-        <p>JavaScript controls the DOM state.</p>
-        <code>classList.add('active')</code>
-        <div class="page-num">10 / 20</div>
-    </div>
-
-    <div class="slide" style="text-align:center;">
-        <h2>Live Web Integration</h2>
-        <p>Next: A live Wikipedia page embedded in a 16:9 container.</p>
-        <div class="page-num">11 / 20</div>
-    </div>
-
-    <div class="slide">
-        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:10px;">
-            <h2>Wikipedia Reference</h2>
-            <span style="font-size:0.9rem; color:#64748b;">Live Interaction</span>
-        </div>
-        
-        <div class="preview-16-9">
-            <div class="browser-header">
-                <div class="dot" style="background:#ef4444;"></div>
-                <div class="dot" style="background:#eab308;"></div>
-                <div class="dot" style="background:#22c55e;"></div>
-                <span style="font-size:0.7rem; color:#64748b; margin-left:10px;">en.wikipedia.org/wiki/Data_visualization</span>
-            </div>
-            <iframe src="https://en.wikipedia.org/wiki/Data_visualization" style="width:100%; height:100%; border:none;"></iframe>
-        </div>
-
-        <div class="page-num">12 / 20</div>
-    </div>
-
-    <div class="slide">
-        <h2>Case Study: University X</h2>
-        <p>Adopted HTML slides for all CS lectures.</p>
-        <p>Result: Students contributed code fixes to slides via GitHub.</p>
-        <div class="page-num">13 / 20</div>
-    </div>
-
-    <div class="slide layout-split">
-        <div>
-            <h2>Responsive Design</h2>
-            <p>Slides automatically adjust text size and layout for mobile screens.</p>
-        </div>
-        <img src="https://placehold.co/300x500/ccc/333?text=Mobile+View" style="margin:0 auto; border-radius:20px;">
-        <div class="page-num">14 / 20</div>
-    </div>
-
-    <div class="slide">
-        <h2>Security</h2>
-        <p>Running in a browser sandbox prevents macro viruses common in office files.</p>
-        <div class="page-num">15 / 20</div>
-    </div>
-
-    <div class="slide">
-        <h2>Accessibility (WCAG)</h2>
-        <p>Proper contrast ratios and semantic HTML make this deck accessible to screen readers.</p>
-        <div class="page-num">16 / 20</div>
-    </div>
-
-    <div class="slide">
-        <h2>Future Work</h2>
-        <p>Implementing WebGL for 3D data rotation directly in the slide.</p>
-        <div class="page-num">17 / 20</div>
-    </div>
-
-    <div class="slide">
-        <h2>Summary</h2>
-        <ul>
-            <li>Performance is superior.</li>
-            <li>Design is flexible (CSS).</li>
-            <li>Data integration is seamless.</li>
-        </ul>
-        <div class="page-num">18 / 20</div>
-    </div>
-
-    <div class="slide">
-        <h2>References</h2>
-        <p>1. W3C Standards (2025)</p>
-        <p>2. MDN Web Docs</p>
-        <div class="page-num">19 / 20</div>
-    </div>
-
     <div class="slide active" style="text-align:center; align-items:center; display:flex;">
         <div style="width:100%">
-            <h1>Thank You</h1>
-            <h2>Questions?</h2>
-            <p>email@university.edu</p>
+            <img src="Image/thank you.png" alt="" style="width:30%;"><br><br>
+            <img src="Image/Q and D.png" alt="" style="width:20%;"><br><br>
+            <a href="" target="_blank">
+                <i class="fab fa-linkedin fa-2x" style="color: #0077b5;"></i>
+            </a>
+            <p style="color: #0077b5; font-weight:500;">niyasmuthukad</p>
         </div>
-        <div class="page-num">20 / 20</div>
     </div>
 
 </div>
